@@ -1,0 +1,28 @@
+.s-node {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    box-sizing: border-box;
+    width: 40%;
+    padding-right: 40px;
+
+    .view & {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    width: 60%;
+
+    .view & {
+      width: 100%;
+    }
+  }
+}

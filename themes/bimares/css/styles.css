@@ -1,0 +1,125 @@
+body {
+  font-size: 18px;
+  line-height: 1.4; }
+
+.page-title {
+  margin: 0 0 20px;
+  font-size: 40px;
+  text-align: right; }
+
+/**
+ * The following variable and function originate from the sass-mq library.
+ * If you have already included it, you can eliminate the below
+ * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
+ */
+#block-languageswitcher .links li a[hreflang="en"], #block-languageswitcher .links li a[hreflang="pl"] {
+  display: inline-block;
+  background-image: url("../css/img/sprite.svg"); }
+
+.s-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .s-header__logo {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 30%;
+    padding-right: 40px; }
+    .s-header__logo img {
+      width: 100%;
+      height: auto; }
+  .s-header__content {
+    width: 70%; }
+  .s-header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.s-node {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .s-node__image {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40%;
+    padding-right: 40px; }
+    .view .s-node__image {
+      width: 100%;
+      padding-right: 0; }
+    .s-node__image img {
+      width: 100%;
+      height: auto; }
+  .s-node__content {
+    width: 60%; }
+    .view .s-node__content {
+      width: 100%; }
+
+.view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .view .s-node img {
+    max-width: 100%;
+    height: auto; }
+  @media (min-width: 640px) {
+    .view .s-node {
+      width: 48%; } }
+
+#block-languageswitcher .links li {
+  display: inline-block;
+  list-style: none; }
+  #block-languageswitcher .links li a {
+    font-size: 0;
+    margin: 20px;
+    width: 40px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 0px 1px #42b3a6;
+            box-shadow: 0px 0px 0px 1px #42b3a6;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out; }
+    #block-languageswitcher .links li a:hover {
+      -webkit-box-shadow: 0px 0px 5px 1px #42b3a6;
+              box-shadow: 0px 0px 5px 1px #42b3a6; }
+    #block-languageswitcher .links li a[hreflang="en"] {
+      background-position: 0 0; }
+    #block-languageswitcher .links li a[hreflang="pl"] {
+      background-position: 0 -30px; }
+
+#block-bimares-main-menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0; }
+  #block-bimares-main-menu > ul li {
+    display: inline-block; }
+    #block-bimares-main-menu > ul li a {
+      color: #42b3a6;
+      font-size: 24px; }
+
+#block-bimares-local-tasks > ul li {
+  display: inline-block;
+  padding-right: 40px; }
+
+/*# sourceMappingURL=styles.css.map */

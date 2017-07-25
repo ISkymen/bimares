@@ -1,0 +1,28 @@
+.s-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__logo {
+    display: block;
+    box-sizing: border-box;
+    width: 30%;
+    padding-right: 40px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    width: 70%;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__site-name {
+
+  }
+}

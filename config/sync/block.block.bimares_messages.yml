@@ -1,0 +1,22 @@
+uuid: 7742b550-bfc4-4a54-8923-ba4d261a8ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bimares
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bimares_messages
+theme: bimares
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

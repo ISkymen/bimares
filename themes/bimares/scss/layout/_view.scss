@@ -1,0 +1,16 @@
+.view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .s-node {
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include tablet {
+      width: 48%;
+    }
+  }
+}

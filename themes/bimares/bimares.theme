@@ -1,0 +1,6 @@
+<?php
+
+function bimares_preprocess_page (&$variables) {
+  $variables['site_logo'] =  theme_get_setting('logo.url');
+  $variables['site_name'] = \Drupal::config('system.site')->get('name');
+}

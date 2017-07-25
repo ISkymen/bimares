@@ -1,0 +1,14 @@
+uuid: abb52927-c043-4038-a2b3-ba008afb0ae1
+name: 'Bimares Sp.zo.o'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

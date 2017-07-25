@@ -1,0 +1,22 @@
+uuid: 8451c4bc-d9e7-4659-8161-1268ec6a5ebc
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bimares
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bimares_help
+theme: bimares
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

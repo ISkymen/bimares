@@ -1,0 +1,19 @@
+name: 'Bimares theme'
+description: 'Custom theme for Bimares.'
+
+core: 8.x
+type: theme
+base theme: stable
+
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar: 'Sidebar'
+  footer: 'Footer'
+
+libraries:
+  - 'bimares/main'

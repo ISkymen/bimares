@@ -1,0 +1,21 @@
+$tablet-width: 640px;
+$desktop-width: 960px;
+$wide-desktop-width: 1200px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin wide {
+  @media (min-width: #{$wide-desktop-width}) {
+    @content;
+  }
+}
+
+$color-main: #42b3a6;
