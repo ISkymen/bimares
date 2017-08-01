@@ -73,8 +73,9 @@
 
 {%
 set classes = [
-'s-node',
-'s-node--product',
+  's-node',
+  view_mode ? 's-node--' ~ view_mode|clean_class,
+  's-node--product',
 ]
 %}
 

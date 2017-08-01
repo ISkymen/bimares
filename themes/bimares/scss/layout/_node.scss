@@ -7,6 +7,10 @@
     width: 40%;
     padding-right: 40px;
 
+    &.s-node--teaser {
+      width: 100%;
+    }
+
     .view & {
       width: 100%;
       padding-right: 0;

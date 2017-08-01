@@ -55,6 +55,8 @@ body {
             box-sizing: border-box;
     width: 40%;
     padding-right: 40px; }
+    .s-node__image.s-node--teaser {
+      width: 100%; }
     .view .s-node__image {
       width: 100%;
       padding-right: 0; }
