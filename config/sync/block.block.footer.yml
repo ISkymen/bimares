@@ -1,0 +1,25 @@
+uuid: 7d50ba4b-6d8a-46e5-8d6b-74c0001adc69
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:52d727a8-9ab5-4a46-9686-e2678ab4b8a7'
+  module:
+    - block_content
+  theme:
+    - bimares
+id: footer
+theme: bimares
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:52d727a8-9ab5-4a46-9686-e2678ab4b8a7'
+settings:
+  id: 'block_content:52d727a8-9ab5-4a46-9686-e2678ab4b8a7'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

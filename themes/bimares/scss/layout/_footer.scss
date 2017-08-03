@@ -1,0 +1,16 @@
+#block-footer {
+  background: $color-second;
+  padding: 20px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+
+  .s-footer__content {
+    color: #333;
+
+    p {
+      margin: 0;
+      font-size: 0.7em;
+    }
+  }
+}
