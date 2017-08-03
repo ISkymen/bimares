@@ -1,6 +1,7 @@
 .s-header {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 
   &__logo {
     display: block;
@@ -8,7 +9,7 @@
     width: 30%;
     padding-right: 40px;
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
     }
   }
@@ -23,6 +24,7 @@
   }
 
   &__site-name {
+    font-size: 2em;
 
   }
 }

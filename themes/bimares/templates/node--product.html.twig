@@ -80,10 +80,10 @@ set classes = [
 %}
 
 <article{{ attributes.addClass(classes) }}>
-  <div class="s-node__content">
-    <div class="s-node__image">
+  <div class="s-node__image">
       {{ content.field_product_image }}
-    </div>
+  </div>
+  <div class="s-node__content">
     {{ title_prefix }}
     {% if not page %}
       <h2 class="page-title">

@@ -5,9 +5,24 @@
     padding: 0;
     li {
       display: inline-block;
+      width: 100%;
+      text-align: center;
       a {
-        color: $color-main;
-        font-size: 24px;
+        transition: all .1s linear;
+        color: $color-text;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        padding: 5px 0;
+        margin-left: 5px;
+        &.is-active {
+          background: $color-second;
+        }
+
+        &:hover {
+          background: $color-main;
+          color: #fff;
+        }
       }
     }
   }
