@@ -1,37 +1,76 @@
-.s-node--teaser.s-node--product {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  line-height: 0;
+.s-node--product {
+
   .s-node__image {
-    box-sizing: border-box;
-    width: auto;
+    width: span(12);
     img {
       width: 100%;
     }
   }
   .s-node__content {
+    width: span(12);
+  }
+
+  &:hover {
+    @include desktop {
+      .s-node__content {
+        max-height: 280px;
+      }
+    }
+
+  }
+
+  .s-node__title {
+    font-size: 30px;
+  }
+}
+
+.s-node--teaser.s-node--product {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4%;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  .s-node__image {
+    line-height: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .s-node__content {
+    box-sizing: border-box;
     position: absolute;
-    right: 0;
     bottom: 0;
     left: 0;
-    width: auto;
-    padding: 20px;
+    right: 0;
+    max-height: 90px;
+    padding: 10px;
     color: #fff;
     background: linear-gradient(to bottom, rgba(20, 19, 19, 0.01) 0%, #42b3a6 100%);
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    font-size: 0.9em;
     line-height: 1.4;
-    .page-title {
-      margin: 0 0 0 20px;
-      padding: 0;
-      text-align: left;
-      a {
-        text-decoration: none;
-        color: #fff;
+    transition: 0.5s max-height ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    @include desktop {
+      .s-node__content {
+        max-height: 280px;
       }
+    }
+
+  }
+
+  .s-node__title {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
     }
   }
 }

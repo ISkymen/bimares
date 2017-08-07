@@ -3,9 +3,20 @@
   flex-wrap: wrap;
 
   &__image {
-    box-sizing: border-box;
-    width: 40%;
-    padding-right: 40px;
+    //background: rgba(255,0,0, 0.5);
+    width: span(2 of 2);
+
+    @include tablet {
+      width: span(4 narrow);
+
+      .s-node--page & {
+        margin-right: gutter();
+      }
+    }
+
+
+
+    //padding: gutter();
 
     &.s-node--teaser {
       width: 100%;
@@ -17,13 +28,18 @@
     }
 
     img {
-      width: 85%;
+      width: 100%;
       height: auto;
     }
   }
 
   &__content {
-    width: 60%;
+    margin-top: 20px;
+    width: span(2 of 2);
+
+    @include tablet {
+      width: span(8);
+    }
 
     .view & {
       width: 100%;

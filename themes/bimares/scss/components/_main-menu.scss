@@ -1,0 +1,128 @@
+.s-menu {
+
+  &__toggle {
+
+    $height: 12px;
+    $width: 40px;
+
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    z-index: 30;
+    width: $width;
+    padding: $height 0;
+    @include transition();
+
+    @include tablet {
+      display: none;
+    }
+
+    span, span:before, span:after {
+      height: 5px;
+      width: inherit;
+      background: $color-main;
+      display: block;
+      content: '';
+      @include transition();
+    }
+
+    span {
+      &:before {
+        position: absolute;
+        top: 0;
+      }
+      &:after {
+        position: absolute;
+        top: $height*2;
+      }
+    }
+
+    &.active {
+      span {
+        background: transparent;
+        &:before {
+          top: $height;
+          transform: rotate(45deg);
+        }
+        &:after {
+          top: $height;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__canvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    z-index: 200;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    @include transition();
+
+    @include tablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+      background: none;
+    }
+
+    @include desktop {
+      top: 22px;
+    }
+
+    &.active {
+      left: 0;
+      right: 65px;
+    }
+  }
+}
+
+nav {
+  > .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
+
+    .menu-item {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+
+      @include tablet {
+        width: 32%;
+      }
+      a {
+        transition: all .1s linear;
+        color: $color-text;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        padding: 5px 0;
+        &.is-active {
+          background: $color-second;
+        }
+
+        &:hover {
+          background: $color-main;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

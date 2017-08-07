@@ -17,6 +17,8 @@
 	"gulp-svg-sprite": "latest",
     "gulp-concat": "latest",
     "gulp-uglify": "latest",
-    "yargs": "latest"
+    "yargs": "latest",
+    "susy": "latest",
+    "gulp-csscomb": "latest"
   }
 }

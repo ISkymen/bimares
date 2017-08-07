@@ -52,18 +52,21 @@
       </a>
     {% endif %}
     <div class="s-header__content">
-      <div class="s-header__top">
+
         {% if is_front %}
           <h1 class="s-header__site-name">{{ site_name }}</h1>
         {% else %}
           <h2 class="s-header__site-name">{{ site_name }}</h2>
         {% endif %}
+
+
+      <a class="s-menu__toggle">
+        <span></span>
+      </a>
+      <div class="s-menu__canvas">
         {{ page.header }}
-      </div>
-      <div class="s-menu">
         {{ page.primary_menu }}
       </div>
-
     </div>
   </header>
 

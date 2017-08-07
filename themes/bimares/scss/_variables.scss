@@ -18,8 +18,26 @@ $wide-desktop-width: 1200px;
   }
 }
 
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 0.2,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);
+
 $color-main: #42b3a6;
 $color-second: rgba(109, 193, 179, 0.5);
 $color-bg: rgba(236,248,247,0.3);
 $color-text: #333;
 $font-main: 'Roboto Condensed', serif;
+
+@mixin site-width {
+  margin: 0 auto;
+  @include desktop {
+    max-width: 960px;
+  }
+}
+
+@mixin transition ($time: 0.2s) {
+  transition: all $time ease-in-out;
+}

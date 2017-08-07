@@ -1,3 +1,6 @@
+@import "reset";
+@import "node_modules/susy/sass/susy";
+@import "node_modules/susy/sass/plugins/svg-grid";
 @import "variables";
 @import "common";
 @import "sprite";
@@ -6,8 +9,9 @@
 @import "layout/node";
 @import "layout/view";
 @import "components/language-block";
-@import "components/menu";
 @import "components/tasks";
+@import "components/main-menu";
 
 @import "layout/footer";
 @import "layout/node-product";
+

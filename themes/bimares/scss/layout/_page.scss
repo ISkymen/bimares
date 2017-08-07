@@ -1,4 +1,12 @@
 .page {
+  //background: susy-svg-grid(2) no-repeat scroll;
+  width: span(2 of 2 wide);
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto 10px;
+
+  @include tablet {
+    //background: susy-svg-grid() no-repeat scroll;
+    width: span(12 of 12 wide);
+    margin: 10px auto;
+  }
 }

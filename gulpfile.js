@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     shell = require('gulp-shell'),
     browserSync = require("browser-sync"),
     argv = require('yargs').argv,
+		csscomb = require('gulp-csscomb'),
     reload = browserSync.reload;
 
 var args = {
@@ -83,6 +84,7 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass()).on('error', sass.logError)
         .pipe(prefixer())
+        // .pipe(csscomb())
         .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(path.styles.css))
         .pipe(reload({stream: true}));
@@ -98,7 +100,7 @@ gulp.task('js', function () {
 
   if (!debug) {
     process
-			.pipe(uglify())
+			.pipe(uglify());
   }
 
   process
@@ -107,11 +109,10 @@ gulp.task('js', function () {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('clearcache', function() {
-    return shell.task([
-        'drush cr'
-    ]);
-});
+gulp.task('clearcache', shell.task([
+      'drush cr'
+]));
+
 
 gulp.task('reload', ['clearcache'], function () {
     reload();

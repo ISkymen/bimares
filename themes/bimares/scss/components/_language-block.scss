@@ -1,20 +1,30 @@
 #block-languageswitcher {
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+
   .links {
+    text-align: center;
+
+    @include tablet {
+      text-align: right;
+    }
     li {
       display: inline-block;
       list-style: none;
 
       a {
         font-size: 0;
-        margin: 20px;
+        margin: 10px 20px;
         width: 40px;
         height: 30px;
         background-size: cover;
         border-radius: 3px;
-        box-shadow: 0px 0px 0px 1px #42b3a6;
+        box-shadow: 0 0 0 1px #42b3a6;
         transition: 0.2s all ease-in-out;
         &:hover {
-          box-shadow: 0px 0px 5px 1px #42b3a6;
+          box-shadow: 0 0 5px 1px #42b3a6;
         }
         &[hreflang="en"] {
         @include sprite(gb);

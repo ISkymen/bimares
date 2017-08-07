@@ -2,8 +2,12 @@ main:
   css:
     theme:
       css/styles.css: {}
-#  js:
-#      js/scripts.js: {}
+  js:
+      js/main.js: {}
+  dependencies:
+      - core/jquery
+      - core/jquery.once
+      - core/drupal
 fonts:
   css:
     theme:

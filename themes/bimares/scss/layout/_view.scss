@@ -10,7 +10,7 @@
     }
 
     @include tablet {
-      width: 48%;
+      width: span(6);
     }
   }
 }
