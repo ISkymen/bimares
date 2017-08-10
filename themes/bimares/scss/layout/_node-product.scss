@@ -1,13 +1,14 @@
 .s-node--product {
 
   .s-node__image {
-    width: span(12);
+    width: span(5);
+    padding-right: 40px;
     img {
       width: 100%;
     }
   }
   .s-node__content {
-    width: span(12);
+    width: span(7);
   }
 
   &:hover {
@@ -30,25 +31,31 @@
   margin-bottom: 4%;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   .s-node__image {
+    width: 100%;
+    padding-right: 0;
     line-height: 0;
     img {
       width: 100%;
     }
   }
   .s-node__content {
+    width: 100%;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    max-height: 90px;
-    padding: 10px;
+    max-height: 80px;
+    padding: 0 30px;
     color: #fff;
     background: linear-gradient(to bottom, rgba(20, 19, 19, 0.01) 0%, #42b3a6 100%);
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
     line-height: 1.4;
     transition: 0.5s max-height ease;
     pointer-events: none;
+    ul {
+      padding: 0;
+    }
   }
 
   &:hover {
@@ -69,7 +76,7 @@
     align-items: center;
     a {
       text-decoration: none;
-      font-size: 20px;
+      font-size: 0.9em;
       color: #fff;
     }
   }

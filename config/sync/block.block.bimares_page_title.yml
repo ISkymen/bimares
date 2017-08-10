@@ -1,7 +1,9 @@
 uuid: 91784378-6252-4d97-bc9d-8f0bf6155b55
 langcode: en
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - bimares
 _core:
@@ -9,7 +11,7 @@ _core:
 id: bimares_page_title
 theme: bimares
 region: content
-weight: -4
+weight: -1
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/*\r\nnode/*"
+    negate: true
+    context_mapping: {  }
