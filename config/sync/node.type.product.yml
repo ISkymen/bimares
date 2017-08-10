@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Product
 type: product
-description: ''
+description: 'Use <em>product</em> for your products.'
 help: ''
 new_revision: true
 preview_mode: 1

@@ -7,11 +7,11 @@ logo:
   use_default: 1
 favicon:
   use_default: 1
-browsersync_enabled: 1
-browsersync_host: 192.168.1.100
+browsersync_enabled: 0
+browsersync_host: 127.0.0.1
 browsersync_port: '3000'
 third_party_settings:
   browsersync:
-    enabled: '1'
-    host: 192.168.1.100
+    enabled: null
+    host: 127.0.0.1
     port: '3000'

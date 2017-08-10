@@ -28,6 +28,16 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
+p {
+  margin: 20px;
+}
+
+.s-node--page ul {
+  margin: 20px;
+}
+
+}
+
 ol, ul {
   list-style: none; }
 
@@ -410,3 +420,21 @@ nav > .menu {
       color: #fff; }
 
 /*# sourceMappingURL=styles.css.map */
+
+ul {
+    list-style-type: disc !important;
+    padding: 0 3em;
+}
+
+.s-node--full.s-node--product > .s-node__image {
+    width: 40% !important;
+    padding-right: 40px;
+}
+
+.s-node--full.s-node--product > .s-node__content {
+    width: 60% !important;
+}
+
+.s-header__site-name {
+  font-size:2em;
+}
